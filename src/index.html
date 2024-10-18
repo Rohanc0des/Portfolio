@@ -17,33 +17,37 @@
     <div id="top"></div>
 
     <!-- **** Navigation Bar **** -->
-    <nav>
-      <ul class="nav-bar">
-        <li><a href="#about" class="cta-btn">About Me</a></li>
-        <li><a href="#projects" class="cta-btn" >Projects</a></li>
-        <li><a href="#contact" class="cta-btn">Contact</a></li>
-        <li>
-          <a href="assets/resume.pdf" class="cta-btn" target="_blank" download="Rohan_Singh_Resume.pdf">
-            Resume
-          </a>
-        </li>
-        <!-- Social Media Links -->
-        <li>
-          <a href="https://github.com/Rohanc0des" target="_blank" class="social-link">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/rohan-singh-9b4bb1259/" target="_blank" class="social-link">
-            <i class="fa fa-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/RohanC0des" target="_blank" class="social-link">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Rohan Singh</div>
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="fa fa-bars"></i>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="cta-btn">About Me</a></li>
+          <li><a href="#projects" class="cta-btn">Projects</a></li>
+          <li><a href="#contact" class="cta-btn">Contact</a></li>
+          <li>
+            <a href="assets/resume.pdf" class="cta-btn" target="_blank" download="Rohan_Singh_Resume.pdf">Resume</a>
+          </li>
+          <!-- Social Media Links -->
+          <li>
+            <a href="https://github.com/Rohanc0des" target="_blank" class="social-link">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/rohan-singh-9b4bb1259/" target="_blank" class="social-link">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/RohanC0des" target="_blank" class="social-link">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- /END Navigation Bar -->
 
@@ -159,5 +163,14 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+    <script>
+      // JavaScript to toggle the navigation menu on mobile
+      const navToggle = document.getElementById("nav-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-menu-visible");
+      });
+    </script>
   </body>
 </html>
